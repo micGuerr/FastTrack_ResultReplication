@@ -1,0 +1,39 @@
+digraph G
+{
+        node [shape = record];
+
+        node0 [ label =" <f0> Downloaded Data  " ];
+        node1 [ label =" <f0> data_behavior  "];
+        node2 [ label =" <f0> data_mri  "];
+        node3 [ label =" <f0> software  "];
+        node4 [ label =" <f0> behavior files" style = dashed];
+        node5 [ label =" <f0> ID003"];
+        node6 [ label =" <f0> ...  "];
+        node7 [ label =" <f0> ID045 "];
+        node8 [ label =" <f0> software files" style = dashed];
+        node9 [ label =" <f0> dwi  "];
+        node10 [ label =" <f0> func  "];
+        node11 [ label =" <f0> highres  " ];
+        node12 [ label =" <f0> dwi files" style = dashed];
+        node13 [ label =" <f0> func files" style = dashed];
+        node14 [ label =" <f0> highres files" style = dashed];
+
+
+        "node0":f0 -> "node1":f0;
+        "node0":f0 -> "node2":f0;
+        "node0":f0 -> "node3":f0;
+
+        "node1":f0 -> "node4":f0;
+        "node2":f0 -> "node5":f0;
+        "node2":f0 -> "node6":f0;
+        "node2":f0 -> "node7":f0;
+        "node3":f0 -> "node8":f0;
+
+        "node5":f0 -> "node9":f0;
+        "node5":f0 -> "node10":f0;
+        "node5":f0 -> "node11":f0;
+
+        "node9":f0 -> "node12":f0;
+        "node10":f0 -> "node13":f0;
+        "node11":f0 -> "node14":f0;
+}

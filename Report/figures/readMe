@@ -1,0 +1,7 @@
+The command used to generate the directory tree structure is:
+
+dot -Tpng gen_dir_tree   -o output2.png
+
+reference link is https://www.linuxjournal.com/article/7275?page=0,2
+
+
